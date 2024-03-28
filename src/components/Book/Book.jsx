@@ -24,7 +24,6 @@ import { Link } from 'react-router-dom';
 
     <div className="card-body mx-6">
     <h2 className="card-title text-black font-bold">{name}</h2>
-    {/* <p className='text-sm text-[#131313CC] font-medium p-2'><span className='font-bold text-base text-slate-700'>Review :</span> {review}</p> */}
 
     <p className='border-b-2 border-dashed text-base font-medium text-[#131313CC] p-1'>By : {author}</p>
     

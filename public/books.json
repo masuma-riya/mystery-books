@@ -7,10 +7,14 @@
      "category": "Classic",
      "review": "The original animated Beauty And The Beast is one of my favorite Disney films.",
      "rating": "4.8",
-     "total_pages": "275 Pages",
+     "pages": 275,
      "publisher": "Simon & Schuster",
      "yearOf_publishing": 1740,
-     "tags": ["Disney", "Princess"]
+     "tags": ["Disney", "Princess"],
+     "logo":"https://i.ibb.co/7jx0ZFn/classic.webp",
+     "logo2":"https://i.ibb.co/WfRLWtq/cute-book-197329061.webp",
+        "category_name":"Classic & Fiction",
+        "availability":"100 Books Available"
    },
     {
      "id": 2,
@@ -20,10 +24,14 @@
      "category": "Fiction",
      "review": "Best novel I've ever read. It's interesting, entertaining and has a great ending.",
      "rating": "4.5",
-     "total_pages": "659 Pages",
+     "pages": 659 ,
      "publisher": "Alfred A. Knopf",
      "yearOf_publishing": 1992,
-     "tags": ["History", "Adventure"]
+     "tags": ["History", "Adventure"],
+     "logo":"https://i.ibb.co/bLY5D6S/comedy.jpgg",
+     "logo2":"https://i.ibb.co/r5dRQtM/images.jpg",
+        "category_name":"Comedy & Funny",
+        "availability":"200 Books Available"
    },
     {
      "id": 3,
@@ -33,10 +41,14 @@
      "category": "Classic",
      "review": "Must read this one!! I will suggest you this, for a funny rib-tickling narrative by jerome K.",
      "rating": "4.7",
-     "total_pages": "326 Pages",
+     "pages": 326 ,
      "publisher": "J. W. Arrowsmith",
      "yearOf_publishing": 1889,
-     "tags": ["Boatman", "Novel"]
+     "tags": ["Boatman", "Novel"],
+     "logo":"https://i.ibb.co/Lpk2b5C/history2.webp",
+     "logo2":"https://i.ibb.co/q14XnD5/history.jpg",
+        "category_name":"History & Cultural",
+        "availability":"350 Books Available"
    },
     {
      "id": 4,
@@ -46,23 +58,32 @@
      "category": "Fiction",
      "review": "This book had me hooked from the first line on the first page. I'm going to read it again.",
      "rating": "5.00",
-     "total_pages": "196 Pages",
+     "pages": 196,
      "publisher": " Voyna I Mir",
      "yearOf_publishing": 1865,
-     "tags": ["Historical", "Warnovel"]
+     "tags": ["Historical", "Warnovel"],
+     "logo":"https://i.ibb.co/k2CWKmV/800px-COLOURBOX43358590.jpg",
+     "logo2":"https://i.ibb.co/vZHS1GH/boy-and-girl-reading-book-logo-2-BKG76-X.jpg",
+        "category_name":"Kids & Entertain",
+        "availability":"150 Books Available"
+     
    },
     {
      "id": 5,
-     "name": "Devdas Bengali Novel",
+     "name": "Devdas",
      "author": "Sharat Chandra",
      "image": "https://i.ibb.co/mbCYP7g/kindpng-4945926-1.png",
      "category": "Classic",
      "review": "By the time I was in the last few pages, there were tears in my eyes and for a reason.",
      "rating": "4.5",
-     "total_pages": "376 Pages",
+     "pages": 376,
      "publisher": "GCS Publication",
      "yearOf_publishing": 1917,
-     "tags": ["Devdas", "Novel"]
+     "tags": ["Devdas", "Novel"],
+     "logo":"https://i.ibb.co/82H4j3L/adv.jpg",
+     "logo2":"https://i.ibb.co/Dg7Qpd6/ad2.png",
+        "category_name":"Fantasy & Adventure",
+        "availability":"410 Books Available"
    },
     {
      "id": 6,
@@ -72,9 +93,13 @@
      "category": "Fiction",
      "review": "This book is fantastic! The thrilling elements are spot on! Thoroughly enjoyed reading it!",
      "rating": "4.9",
-     "total_pages": "447 Pages",
+     "pages": 447,
      "publisher": "Knopf Doubleday",
      "yearOf_publishing": 1983,
-     "tags": ["History", "Devil"]
+     "tags": ["History", "Devil"],
+     "logo":"https://i.ibb.co/z2XKZQY/horror.jpg",
+     "logo2":"https://i.ibb.co/7gZ8vv7/horror2.jpg",
+        "category_name":"Horror & Fear",
+        "availability":"170 Books Available"
    }
 ]

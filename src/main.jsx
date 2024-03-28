@@ -11,11 +11,15 @@ import Home from './components/Home/Home';
 import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
 import SingleBook from './components/SingleBook/SingleBook';
+import KidsZone from './components/KidsZone/KidsZone';
+import BookCateGory from './components/BookCategory/BookCateGory';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -26,6 +30,14 @@ const router = createBrowserRouter([
        element: <ListedBooks></ListedBooks>,
       },
       {
+       path: "/book-category",
+       element: <BookCateGory></BookCateGory> ,
+      },
+      {
+       path: "/about-us",
+       element: <KidsZone></KidsZone> ,
+      },
+      {
         path: "/book/:id",
         element: <SingleBook></SingleBook>,
         loader: () => fetch('../books.json')
@@ -33,6 +45,7 @@ const router = createBrowserRouter([
       {
        path: "/pages-to-read",
        element: <PagesToRead></PagesToRead>,
+       loader: () => fetch('../books.json')
       }
     ]
   },

@@ -32,9 +32,13 @@ const Navbar = () => {
         `}>
           <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/">Home</NavLink>
 
+          <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/book-category">Category</NavLink>
+
           <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'}  to="/listed-books">Listed Books</NavLink>
 
           <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'}  to="/pages-to-read">Pages To Read</NavLink>
+
+          <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'}  to="/about-us">About us</NavLink>
         
         </ul>
         </nav>
