@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip} from 'recharts';
 
 const PagesToRead = () => {
 
@@ -8,7 +8,7 @@ const [bookData, setBookData] = useState([]);
 
 useEffect(() => {
   const savedBooks = JSON.parse(localStorage.getItem('books')) || [];
-  const chartData = savedBooks.map((book, index) =>({
+  const chartData = savedBooks.map((book) =>({
      name: book.name,
      Pages: book.pages,
   }));
@@ -31,7 +31,7 @@ const TriangleBar = (props) => {
   };
 
     return ( 
-        <div className='max-w-7xl mx-auto text-center'>
+        <div className='w-11/12 m-auto text-center'>
     <BarChart 
     width={1000}
     height={500}
@@ -46,6 +46,7 @@ const TriangleBar = (props) => {
 
 <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
+
       <YAxis />
       <Tooltip />
       <Bar dataKey="Pages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
@@ -54,7 +55,6 @@ const TriangleBar = (props) => {
         ))}
 
       </Bar>
-
     </BarChart>
         </div>
     );
