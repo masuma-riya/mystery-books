@@ -48,10 +48,10 @@ const SingleBook = () => {
 
    
     return (
-        <div className="flex gap-20 w-11/12 m-auto">
-            <img className="w-[400px] h-[450px] bg-[#1313130D] p-8 rounded-2xl" src={book.image} alt="" />
+        <div className="md:flex items-center gap-20 w-10/12 md:w-11/12 m-auto">
+            <img className="w-[400px] md:mt-0 mt-4 h-[450px] bg-[#1313130D] p-8 rounded-2xl" src={book.image} alt="" />
              
-             <div>
+             <div className="md:mt-0 mt-6">
              <h1 className="text-3xl font-bold text-black">{book.name}</h1>
              <p className="text-[#131313CC] text-xl font-semibold border-b-2 p-2">By : {book.author}</p>
              <p className=" text-[#131313CC] text-xl font-semibold border-b-2 p-2">{book.category}</p>

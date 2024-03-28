@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
     <Link to={`/book/${id}`}>
     
-    <div className="card card-compact bg-base-100 shadow-xl border">
+    <div className="card card-compact bg-base-100 shadow-xl border mb-4">
     <div className='flex justify-center bg-[#F3F3F3] pt-4 pb-4 m-6 rounded-xl'>
     <img className="w-[134px] h-[166px]" src={image} alt="Shoes" />
     </div>

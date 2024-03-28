@@ -2,12 +2,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const ListedBooks = () => {
-    const [appliedData, setAppliedData] = useState([]);
+    const [readBooks, setReadBooks] = useState([]);
     const [wishlistBooks, setWishlistBook] = useState([]);
+    const [sort, setSort] = useState("");
+    
 
     useEffect(() => {
    const getData = JSON.parse(localStorage.getItem("books")) || [];
-   setAppliedData(getData);
+   setReadBooks(getData);
     },[]);
 
 
@@ -16,16 +18,47 @@ const ListedBooks = () => {
     setWishlistBook(wishListData);
   },[]);
 
-    return (
-      <div role="tablist" className="tabs tabs-lifted">
+  const handleSortBy = (sorting) => {
+      setSort(sorting)
+  }
+
+const sortBooks = (data) => {
+   if(sort === "rating"){
+     return data.sort((a, b) => b.rating - a.rating);
+   }
+   else if(sort === "pages"){
+    return data.sort((a, b) => b.pages - a.pages);
+   }
+   else if(sort === "year"){
+    return data.sort((a, b) => b.yearOf_publishing - a.yearOf_publishing);
+   }
+   else{
+    return data;
+   }
+};
+
+    return ( <div>
+        
+<div className="text-center">
+<div className="dropdown">
+  <div tabIndex={0} role="button" className="btn btn-success border-none px-10 text-white font-bold text-lg m-1 bg-[#23BE0A]">Sort By</div>
+  <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+    <li onClick={() => handleSortBy("rating")} className="text-base font-normal"><a>Ratings</a></li>
+    <li onClick={() => handleSortBy("pages")} className="text-base font-normal"><a>Number Of Pages</a></li>
+    <li onClick={() => handleSortBy("year")} className="text-base font-normal"><a>Publish Year</a></li>
+  </ul>
+</div>
+</div>
+
+      <div role="tablist" className="tabs tabs-lifted w-10/12 m-auto">
       <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" defaultChecked />
       <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box lg:p-6">
       
-      {appliedData.map((data) => (
+      {sortBooks(readBooks).map((data) => (
       <div key={data.id} className="flex flex-col lg:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
       <img src={data.image} alt={data.name} className="bg-base-200 w-56 h-56" />
 
-      <div>
+      <div className="mt-6">
       <h3 className="font-bold text-2xl mb-5">{data.name}</h3>
       <p className="text-[#131313CC] font-medium">By : {data.author}</p>
 
@@ -44,9 +77,9 @@ const ListedBooks = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 mt-5">
       <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>
-      <p className="ml-2 py-1 text-center px-3 w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
+      <p className="ml-2 py-1 text-center px-3 w-32 lg:mt-0 mt-4 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
                                         
-<Link to={`/book/${data.id}`}><button className="rounded-full py-1 px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button></Link>
+<Link to={`/book/${data.id}`}><button className="rounded-full py-1 px-5 text-center lg:mt-0 mt-4 text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button></Link>
                                       
     </div>
    </div>
@@ -57,7 +90,7 @@ const ListedBooks = () => {
     <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Wishlist Books" />
     <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
 
-  {wishlistBooks.map((data) => (
+  {sortBooks(wishlistBooks).map((data) => (
        <div key={data.id} className="flex flex-col md:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
        <img src={data.image} alt={data.name} className="bg-base-200 w-56 h-56" />
 
@@ -89,6 +122,7 @@ const ListedBooks = () => {
 
 </div>
 
+</div>
 </div>
     );
 };
