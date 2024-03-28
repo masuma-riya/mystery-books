@@ -1,9 +1,9 @@
 import image from '../../assets/images/active.png'
 const KidsZone = () => {
     return (
-        <div className="mt-10 text-center text-xl">
+        <div className="mt-10 text-center text-xl w-10/12 m-auto">
 
-<div className="stats shadow mb-20">
+<div className="stats flex flex-col md:flex-row shadow mb-20">
   
   <div className="stat">
     <div className="stat-figure text-primary">
@@ -54,7 +54,7 @@ const KidsZone = () => {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
           <div className="timeline-end mb-10">
-            <div className="text-lg font-black mb-4">What's Special In Us?</div>
+            <div className="text-lg font-black mt-6 mb-4">What Is Special In Us?</div>
             From gripping narratives to profound insights, books foster empathy and understanding, connecting readers across cultures and generations.
           </div>
           <hr />
@@ -76,8 +76,8 @@ const KidsZone = () => {
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
           <div className="timeline-end mb-10">
-            <div className="text-lg font-black mb-4">What's In Our Books?</div>
-            Explore a Diverse Range of Genres and Authors, Handpicked to Suit Your Preferences, and Embark on an Unforgettable Journey through the Pages of Timeless Treasures. With our Services, Your Love for Reading Finds It's Perfect Home!
+            <div className="text-lg font-black mt-6 mb-4">What Is In Our Books?</div>
+            Explore a Diverse Range of Genres and Authors, Handpicked to Suit Your Preferences, and Embark on an Unforgettable Journey through the Pages of Timeless Treasures. With our Services, Your Love for Reading Finds It is Perfect Home!
           </div>
           <hr />
         </li>

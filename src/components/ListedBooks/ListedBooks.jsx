@@ -39,7 +39,7 @@ const sortBooks = (data) => {
 
     return ( <div>
         
-<div className="text-center">
+<div className="text-center lg:mb-0 mb-5">
 <div className="dropdown">
   <div tabIndex={0} role="button" className="btn btn-success border-none px-10 text-white font-bold text-lg m-1 bg-[#23BE0A]">Sort By</div>
   <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
