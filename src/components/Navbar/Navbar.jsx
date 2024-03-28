@@ -27,7 +27,7 @@ const Navbar = () => {
       
         </div>
       
-        <ul className={`flex flex-col md:flex-row md:bg-white bg-[#80818046] items-center text-[rgba(19, 19, 19, 0.80)] absolute text-lg font-extrabold md:gap-8 mt-32  md:mt-0 text-center  md:justify-center md:static 
+        <ul className={`flex flex-col md:flex-row p-3 rounded md:bg-white bg-[#80818046] items-center text-[rgba(19, 19, 19, 0.80)] absolute text-lg font-extrabold md:gap-8 mt-32  md:mt-0 text-center  md:justify-center md:static 
          ${open ? 'right-5' : '-left-96'  }
         `}>
           <NavLink className={({isActive}) => isActive? 'text-lg font-semibold text-[#23BE0A] border p-1 rounded-md border-[#23BE0A]' : 'text-lg font-semibold'} to="/">Home</NavLink>
