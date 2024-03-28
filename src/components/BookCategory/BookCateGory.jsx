@@ -15,7 +15,7 @@ const BookCateGory = () => {
             <div className="text-center mb-10 mt-2">
             <i><h2 className="text-3xl text-amber-900 font-bold">Available Categories</h2></i>
             </div>
-            <div className="grid grid-cols-3 max-w-5xl gap-10 m-auto">
+            <div className="lg:grid grid-cols-3 space-y-10 lg:space-y-0 w-10/12 gap-10 m-auto">
                 {
           bookCategory.map(bookCat => <BookCat key={bookCat.id} bookCat={bookCat}></BookCat>)
                 }

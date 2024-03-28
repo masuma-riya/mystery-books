@@ -9,7 +9,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
 
     return (
-      <div className="flex md:flex-row  flex-col items-center lg:justify-between py-8 w-11/12 gap-7 m-auto">
+      <div className="flex md:flex-row  flex-col items-center lg:justify-between md:py-10 w-11/12 gap-7 m-auto">
       <div className="flex justify-between gap-5 lg:gap-96 items-center">
         <div>
         <h2 className="hide font-work text-3xl font-bold">Books Store</h2>
@@ -46,7 +46,7 @@ const Navbar = () => {
      </div>
     
     
-      <div className=" flex gap-7">
+      <div className="flex gap-7 lg:mb-0 mb-6">
         <button className="btn bg-[#23BE0A] text-white">Sign In</button>
         <button className="btn bg-[#59C6D2] text-white">Sign Up</button>
         

@@ -11,12 +11,12 @@ import Book from "../Book/Book";
     },[])
 
     return (
-        <div className="mt-6 mb-20">
+        <div className="mt-6 md:mb-20">
            <div className="text-center">
            <h2 className="text-4xl font-bold mb-8">Books</h2>
            </div>
           
-         <div className="grid grid-cols-3 gap-6 max-w-5xl m-auto">
+         <div className="lg:grid grid-cols-3 gap-6 w-10/12 m-auto">
             {
                 books.map(book => <Book key={book.id} book={book}></Book>)
             }

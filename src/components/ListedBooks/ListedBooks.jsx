@@ -58,14 +58,14 @@ const ListedBooks = () => {
     <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
 
   {wishlistBooks.map((data) => (
-       <div key={data.id} className="flex flex-col lg:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
-       <img src={data.image} alt={data.bookName} className="bg-base-200 w-56 h-56" />
+       <div key={data.id} className="flex flex-col md:flex-row items-center space-x-4 mt-5 border-2 rounded-xl p-5">
+       <img src={data.image} alt={data.name} className="bg-base-200 w-56 h-56" />
 
       <div>
       <h3 className="font-bold text-2xl mb-5">{data.bookName}</h3>
       <p className="text-[#131313CC] font-medium">By : {data.author}</p>
 
-      <div className="flex flex-col lg:flex-row gap-5 mb-5">
+      <div className="flex flex-col md:flex-row gap-5 mb-5">
       <div className="flex gap-2 mt-5">
       {data.tags.map((tag, index) => (
       <h2 key={index} className="border-2 bg-base-200 text-[#23BE0A] py-1 px-2 rounded-full font-medium">#{tag}</h2>))}
@@ -82,7 +82,7 @@ const ListedBooks = () => {
       <p className=" py-1 px-5 border-0 rounded-full bg-[#328EFF26] text-[#0274ffe7]">Category : {data.category}</p>
       <p className="ml-2 py-1 text-center px-3 w-32 border-0 rounded-full bg-[#FFAC3326] text-[#ff9900de]">Rating : {data.rating}</p>
                                       
-<button className="rounded-full py-1 px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
+<button className="rounded-full px-5 text-center text-lg bg-[#23BE0A] text-white  duration-300 hover:scale-90">View Details</button>
         </div>
       </div>
     </div>))}
